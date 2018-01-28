@@ -232,7 +232,7 @@
         printf(" %5.2f", (double) (end - start) / NUM_LOOPS); \
     } while (0)
 
-#define NAMEWIDTH 11
+#define NAMEWIDTH -11
 
 #define LATTH_2_S__(insn) \
     do { \
