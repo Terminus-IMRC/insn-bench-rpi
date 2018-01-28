@@ -335,8 +335,8 @@ int main()
     LATTH_2__DQ("vacge.f32");
     puts("");
 
-    LATTH_3__DQ("vadd.f32");
     LATTH_3__DQ("vadd.i32");
+    LATTH_3__DQ("vadd.f32");
     puts("");
 
     LATTH_3__DQ("vand");
