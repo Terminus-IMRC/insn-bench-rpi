@@ -22,7 +22,7 @@
                 :
 
 #define INSN_REG_END \
-        ); \
+        , "cc"); \
     } while (0)
 
 
