@@ -17,8 +17,8 @@ $ ./main
 ```
 
 <table>
-<tr> <th>RPi2</th> <th>RPi3</th> </tr>
-<tr> <td><pre>
+<tr> <th>Cortex-A7 (32bit)</th> <th>Cortex-A53 (32bit)</th> </tr> <tr> <td><pre>
+
 vaba.u32    d3:  5.00  2.13  2.20
 vaba.u32    q3:  5.06  4.25  4.40
 
