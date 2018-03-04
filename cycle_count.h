@@ -1,8 +1,3 @@
-#ifndef __ARM_NEON
-/* Because its PMU doesn't support IRQ... */
-#error "Cannot get cycle counter on Raspberry Pi 1"
-#endif /* __ARM_NEON */
-
 #ifndef CYCLE_COUNT_H_
 #define CYCLE_COUNT_H_
 
@@ -18,7 +13,7 @@
 
     extern int perf_fd;
 
-    inline long long cycle_count()
+    static inline long long cycle_count()
     {
         long long v;
         ssize_t err;

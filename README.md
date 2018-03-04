@@ -5,15 +5,20 @@ Yet another instruction benchmark program mainly for Raspberry Pi 2 and 3.
 
 ## Building
 
+* On 32-bit arch:
 ```
-$ make
+$ make neon32
+```
+* On 64-bit arch:
+```
+$ make neon64
 ```
 
 
 ## Running
 
 ```
-$ ./main
+$ ./neon32
 ```
 
 <table>
@@ -240,3 +245,36 @@ vswp        q2:  1.06  2.13
 
 vtrn.8      d2:  4.00  3.06
 vtrn.8      q2:  4.00  3.13</pre></td> </tr></table>
+
+
+```
+$ ./neon64
+```
+
+<table>
+<tr> <th>Cortex-A53 (64bit)</th> </tr> <tr> <td><pre>
+
+fabs        2S:  4.00  0.56
+fabs        4S:  4.00  1.06
+fabs        2D:  4.00  1.06
+fadd        2S:  4.00  0.56  0.60
+fadd        4S:  4.00  1.06  1.10
+fadd        2D:  4.00  1.06  1.10
+fsub        2S:  4.00  0.56  0.60
+fsub        4S:  4.00  1.06  1.10
+fsub        2D:  4.00  1.06  1.10
+fmul        2S:  4.00  0.56  0.60
+fmul        4S:  4.00  1.06  1.10
+fmul        2D:  4.00  1.06  1.10
+fmla        2S:  8.00  0.56  0.70
+fmla        4S:  8.00  1.06  1.10
+fmla        2D:  8.00  1.06  1.10
+fdiv        2S: 13.00 10.13 10.20
+fdiv        4S: 13.00 10.38 10.30
+fdiv        2D: 22.00 19.25 19.40
+fmax        2S:  4.00  0.56  0.60
+fmax        4S:  4.00  1.06  1.10
+fmax        2D:  4.00  1.06  1.10
+fmin        2S:  4.00  0.56  0.60
+fmin        4S:  4.00  1.06  1.10
+fmin        2D:  4.00  1.06  1.10</pre></td> </tr></table>
